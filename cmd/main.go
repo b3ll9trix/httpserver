@@ -31,7 +31,7 @@ func main() {
 func startServer(ctx context.Context, wg *sync.WaitGroup) {
 	defer wg.Done()
 
-	addr := ":8080"
+	addr := os.Getenv("SERVER_PORT")
 	server := httpserver.NewServer(addr)
 	server.Handle("/joke", true, httpserver.HandlerFunc(handlers.GetRandomJoke))
 	log.Printf("Server listening on %s\n", addr)
