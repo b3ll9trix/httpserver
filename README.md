@@ -24,8 +24,8 @@ The variables are set to their defaults in the `Makefile`
 ## Cleanup
 `make clean` deletes the `.hits` and  `.windowmetadata` files in the root directory.
 
-## Test
-The server can be tested in `Postman`/similar by using the API  
+## Usage
+The server can be used in `Postman`/similar by using the API  
  GET `http://localhost:8080/joke`  
 or using `curl`  
   `curl -X GET http://localhost:8080/joke`
