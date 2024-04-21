@@ -31,3 +31,8 @@ or using `curl`
   `curl -X GET http://localhost:8080/joke`
 
 
+# Improvements
+1. The `server` package hosted separately so that it can be used in other modules as well.
+2. Introduce locks on the datstructure to avoid race condition when concurrent APIs try to update data structures.
+
+
